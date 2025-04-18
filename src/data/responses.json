@@ -1,0 +1,44 @@
+﻿{
+	"greetings": {
+		"patterns": [ "hi", "hello", "hey", "good morning", "good afternoon", "good evening" ],
+		"responses": [
+			"Hey there! 😊",
+			"Hello! How can I help you today?",
+			"Hi! What’s on your mind?",
+			"Hey! 👋 Need anything?"
+		]
+	},
+	"farewells": {
+		"patterns": [ "bye", "goodbye", "see you", "good night", "later" ],
+		"responses": [
+			"Goodbye! Take care! 🌙",
+			"See you later! 👋",
+			"Hope to chat again soon!",
+			"Bye! Have a great day! ✨"
+		]
+	},
+	"thanks": {
+		"patterns": [ "thanks", "thank you", "thx", "appreciate it" ],
+		"responses": [
+			"You're very welcome! 🤗",
+			"No problem at all!",
+			"Anytime! Glad I could help!",
+			"Of course! 💜"
+		]
+	},
+	"help": {
+		"patterns": [ "help", "what can you do", "capabilities", "how do i use this" ],
+		"responses": [
+			"I can respond to basic messages like greetings, goodbyes, and thank-yous!",
+			"Try saying hello or asking for help — I’ll reply!",
+			"I’m a simple chatbot here to keep you company and answer simple stuff 💬"
+		]
+	},
+	"default": {
+		"responses": [
+			"Hmm... I don’t know how to respond to that yet 😅",
+			"I’m still learning! Maybe try something else?",
+			"I’m not sure what to say... Want to try a greeting or ask for help?"
+		]
+	}
+}
