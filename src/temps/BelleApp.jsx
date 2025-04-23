@@ -1,8 +1,20 @@
+import NavBar from "../components/NavBar";
+import AboutPage from "../pages/AboutPage";
+import NotFound from "../pages/NotFound"
+import { HashRouter, Routes, Route } from "react-router-dom";
 const BelleApp = () => {
     return (
-        <div>
-            <h2>Belle's App</h2>
-        </div>
+        <>
+            <header>
+                <NavBar />
+            </header>
+            <main>
+                <Routes>
+                    <Route path="/about" element={<AboutPage />} />
+                    <Route path="*" element={<NotFound />} />
+                </Routes>
+            </main>
+        </>
     );
 }
 export default BelleApp;
