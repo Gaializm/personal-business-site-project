@@ -27,6 +27,19 @@ const projects = [
     },
 ];
 
+const services = [
+    {
+        title: 'Graphic Design',
+        description: 'Custom designs for web, print, and branding.',
+        relatedProjectId: 1,
+    },
+    {
+        title: 'Data Visualization',
+        description: 'Interactive dashboards and infographics.',
+        relatedProjectId: 2,
+    },
+];
+
 const ProjectContext = createContext();
 
 export const ProjectProvider = ({ children }) => {
