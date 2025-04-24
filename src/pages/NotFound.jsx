@@ -4,13 +4,11 @@ import styles from "../styles/notfound.module.css";
 
 const NotFound = () => {
   return (
-    <Wrapper>
-      <div className={styles["notfound-wrapper"]}>
-        <h1 className={styles["notfound-title"]}>404</h1>
-        <p className={styles["notfound-message"]}>Sorry, the page you are looking for is not found.</p>
-        <Link to="/" className={styles["notfound-link"]}>Go back to Home</Link>
-      </div>
-    </Wrapper>
+    <div className={styles.wrappers}>
+      <h1 className={styles.title}>404</h1>
+      <p className={styles.message}>Sorry, the page you are looking for is not found.</p>
+      <Link to="/" className={styles.link}>Go back to Home</Link>
+    </div>
   );
 };
 

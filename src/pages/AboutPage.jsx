@@ -1,6 +1,7 @@
 import data from '../data/data.json';
 import styles from '../styles/about.module.css';
 import placeholder from '../assets/placeholderProjectImage.jpg';
+import Wrapper from "../components/Wrapper"
 
 const imageMap = {
   "placeholderProjectImage.jpg": placeholder,

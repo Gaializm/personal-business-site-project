@@ -8,8 +8,8 @@
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #222;
-    color: white;
+    background-color: var(--header-light-color);
+    color: var(--header-light-text-color);
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
   }
@@ -18,7 +18,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     text-decoration: none;
-    color: white;
+    color: var(--header-light-text-color);
   }
   
   .navLinks {
@@ -31,13 +31,13 @@
   
   .navLinks li a {
     text-decoration: none;
-    color: white;
+    color: var(--header-light-text-color);
     font-weight: 500;
     transition: color 0.2s ease;
   }
   
   .navLinks li a:hover {
-    color: #00bcd4;
+    color: var(--link-color);
   }
   
   /* 🔻 Media Query for Small Screens */
@@ -63,12 +63,13 @@
       display: block;
       width: 100%;
       padding: 0.5rem 1rem;
-      background-color: #333;
+      background-color: var(--header-light-color);
       border-radius: 6px;
     }
   
     .navLinks li a:hover {
-      background-color: #444;
+      background-color: var(--header-light-color);
+      color: var(--header-light-text-color);
     }
   }
   

@@ -1,4 +1,4 @@
-.notfound-wrapper {
+.wrappers {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,19 +9,19 @@
     color: #333;
   }
   
-  .notfound-title {
+  .title {
     font-size: 6rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: #e63946;
   }
   
-  .notfound-message {
+  .message {
     font-size: 1.25rem;
     margin-bottom: 2rem;
   }
   
-  .notfound-link {
+  .link {
     font-size: 1rem;
     color: #1d3557;
     background-color: #f1faee;
@@ -31,22 +31,22 @@
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  .notfound-link:hover {
+  .link:hover {
     background-color: #1d3557;
     color: #f1faee;
   }
   
   /* Responsive tweaks */
   @media (max-width: 600px) {
-    .notfound-title {
+    .title {
       font-size: 4rem;
     }
   
-    .notfound-message {
+    .message {
       font-size: 1rem;
     }
   
-    .notfound-link {
+    .link {
       font-size: 0.95rem;
       padding: 0.5rem 1.25rem;
     }
