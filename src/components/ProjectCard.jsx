@@ -1,17 +1,18 @@
+import { Link } from 'react-router-dom';
 import style from '../Styles/Projects.module.css';
 
-const ProjectCard = ({ id, photo, projectName, description, link }) => {
+const ProjectCard = ({ id, photo, projectName, description }) => {
     return (
-        <div className={style["project-cards"]} >
-            <div className={style["project-card_image"]} >
+        <Link to={`/projects/${id}`} className={style["project-card"]}>
+            <div className={style["project-card_image"]}>
                 <img src={photo} alt={projectName} />
             </div>
-            <div className={style["project-card_content"]} >
+            <div className={style["project-card_content"]}>
                 <h2>{projectName}</h2>
                 <p>{description}</p>
             </div>
-        </div>
+        </Link>
     );
-}
+};
 
 export default ProjectCard;

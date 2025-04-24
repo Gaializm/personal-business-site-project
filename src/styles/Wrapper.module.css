@@ -1,0 +1,23 @@
+
+.section {
+    width: 100%;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    background-color: #ffffff; /* optional — change for themed pages */
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.full-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 3rem;
+    background-color: #ffffff; /* optional — change if needed */
+}

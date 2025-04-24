@@ -1,0 +1,45 @@
+.accordion {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.accordion-item {
+    border-bottom: 1px solid #ccc;
+}
+
+.accordion-title {
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background-color: #f7f7f7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+    .accordion-title:hover {
+        background-color: #eaeaea;
+    }
+
+    .accordion-title span {
+        font-size: 1.5rem;
+        margin-left: 1rem;
+    }
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    background-color: #fff;
+    padding: 0 1rem;
+}
+
+.open {
+    padding: 1rem;
+    max-height: 1000px; /* Just a big number to allow room for most content */
+}

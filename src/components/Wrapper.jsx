@@ -1,7 +1,9 @@
-const Wrapper = ({ children }) => {
+import style from '../Styles/Wrapper.module.css';
+
+const Wrapper = ({ children, className = '' }) => {
     return (
-        <div className="section">
-            <div className="container">
+        <div className={`${style.section} ${className}`}>
+            <div className={style.container}>
                 {children}
             </div>
         </div>

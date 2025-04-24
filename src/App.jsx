@@ -5,18 +5,18 @@ import GaiaApp from "./temps/GaiaApp";
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+    const [count, setCount] = useState(0)
 
-  return (
-    <HashRouter>
-      <header>
-      </header>
-      <main>
-        <BelleApp />
-        <GaiaApp />
-      </main>
-    </HashRouter>
-  )
+    return (
+        <HashRouter>
+            <header>
+            </header>
+            <main>
+                <BelleApp />
+                <GaiaApp />
+            </main>
+        </HashRouter>
+    )
 }
 
 export default App

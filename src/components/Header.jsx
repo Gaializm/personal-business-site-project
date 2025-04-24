@@ -10,7 +10,7 @@ const Header = () => {
                 <img src={logo} alt={"ctrl+alt+create logo"} />
             </div>
 
-            <NavBar />
+           {/* <NavBar />*/}
  
         </header>
     );

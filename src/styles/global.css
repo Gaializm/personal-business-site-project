@@ -1,5 +1,6 @@
 /* Global styles */
 body {
+    width: 100%;
     font-family: var(--font-family);
     background-color: var(--third-background-color);
     color: var(--text-color);
