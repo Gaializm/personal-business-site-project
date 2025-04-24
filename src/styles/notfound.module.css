@@ -6,14 +6,14 @@
     padding: 4rem 1rem;
     min-height: 60vh;
     text-align: center;
-    color: #333;
+    color: var(--light-text-color);
   }
   
   .title {
     font-size: 6rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    color: #e63946;
+    color: var(--third-background-color);
   }
   
   .message {
@@ -23,8 +23,8 @@
   
   .link {
     font-size: 1rem;
-    color: #1d3557;
-    background-color: #f1faee;
+    color: var(--button-light-text-color);
+    background-color: var(--button-light-mode-color);
     padding: 0.75rem 1.5rem;
     border-radius: 8px;
     text-decoration: none;
@@ -32,8 +32,8 @@
   }
   
   .link:hover {
-    background-color: #1d3557;
-    color: #f1faee;
+    background-color: var(--button-hover-light-color);
+    color: var(--link-hover-color);
   }
   
   /* Responsive tweaks */
