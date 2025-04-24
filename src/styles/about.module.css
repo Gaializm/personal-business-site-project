@@ -1,67 +1,58 @@
-.about-info {
-    display: flex;
+.infos {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.sections {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.images {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.texts {
+  flex: 1;
+  text-align: left;
+}
+
+.texts h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.texts p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .sections {
     flex-direction: column;
-    gap: 3rem;
-    padding: 2rem 1rem;
-  }
-  
-  .about-section {
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    gap: 2rem;
-    flex-wrap: wrap;
+    text-align: center;
   }
-  
-  .about-section.reverse {
-    flex-direction: row-reverse;
-  }
-  
-  .about-image {
+
+  .images {
     width: 100%;
-    max-width: 400px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 10px;
-    flex-shrink: 0;
+    max-width: 300px;
   }
-  
-  .about-text {
-    flex: 1;
-    min-width: 250px;
-    text-align: right; /* default to right-aligned (for id=1) */
+
+  .texts {
+    text-align: center;
   }
-  
-  .about-section.reverse .about-text {
-    text-align: left; /* left-align for reversed layout (id=2) */
-  }
-  
-  .about-text h2 {
-    margin-bottom: 0.5rem;
-    font-size: 1.75rem;
-  }
-  
-  .about-text p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #444;
-  }
-  
-  /* Responsive styles */
-  @media (max-width: 768px) {
-    .about-section,
-    .about-section.reverse {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .about-image {
-      max-width: 100%;
-    }
-  
-    .about-text {
-      width: 100%;
-      text-align: center !important;
-    }
-  }
-  
+}

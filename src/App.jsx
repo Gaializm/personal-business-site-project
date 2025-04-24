@@ -13,7 +13,7 @@ function App() {
             </header>
             <main>
                 <BelleApp />
-                <GaiaApp />
+                {/* <GaiaApp /> */}
             </main>
         </HashRouter>
     )

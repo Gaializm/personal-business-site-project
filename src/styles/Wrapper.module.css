@@ -3,7 +3,6 @@
     width: 100%;
     padding: 2rem 1rem;
     box-sizing: border-box;
-    background-color: #ffffff; /* optional — change for themed pages */
 }
 
 .container {
@@ -19,5 +18,4 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 3rem;
-    background-color: #ffffff; /* optional — change if needed */
 }
