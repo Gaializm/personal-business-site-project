@@ -1,23 +1,21 @@
 
-import Wrapper from "../components/Wrapper";
 import { serviceItems } from '../contexts/ProjectContext';
+import ProjectGallery from '../components/ProjectGallery';
 import Accordion from "../components/Accordion";
-import Header from "../components/Header";
-import wrapperStyle from "../Styles/Wrapper.module.css";
 
 const ServicesPage = () => {
     return (
 
         <>
-            <Header />
 
-            <Wrapper className={wrapperStyle['full-page']}>
-
+        <div>
             <h1>Our Services</h1>
-
+        </div>
+        <div>
             <Accordion items={serviceItems} />
+        </div>
 
-            </Wrapper>
+
         </>
     );
 };

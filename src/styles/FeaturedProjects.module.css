@@ -1,0 +1,25 @@
+.featuredContainer {
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    text-align: center;
+}
+
+.featuredTitle {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    font-family: var(--font-family);
+    color: var(--light-text-color);
+}
+
+.featuredGrid {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.project-card {
+    flex: 1 1 300px;
+    max-width: 350px;
+}

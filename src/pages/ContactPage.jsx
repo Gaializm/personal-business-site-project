@@ -1,7 +1,4 @@
-import Wrapper from "../components/Wrapper";
 import Accordion from "../components/Accordion";
-import Header from "../components/Header";
-import wrapperStyle from "../Styles/Wrapper.module.css";
 import ContactForm from "../components/ContactForm";
 
 const ServicesPage = () => {
@@ -28,17 +25,16 @@ const ServicesPage = () => {
     return (
 
         <>
-            <Header />
 
-            <Wrapper className={wrapperStyle['full-page']}>
 
                 <h1>Contact Us</h1>
 
                 <ContactForm />
 
+                <h1>FAQ</h1>
+
                 <Accordion items={faqItems} />
 
-            </Wrapper>
         </>
     );
 };

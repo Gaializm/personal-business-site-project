@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
-body{
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Varela+Round&display=swap');
+
+body {
     /* color scheme */
     /* backgrounds */
     --primary-background-color: #FFEDF4;
@@ -24,7 +25,7 @@ body{
     --link-color: #42BCD4;
     --link-hover-color: #CDB4DB;
     /* font */
-    --font-family: 'Roboto', sans-serif;
+    --font-family: "Mulish", sans-serif;
     /* break points */
     --mobile: 768px;
     --tablet: 1024px;

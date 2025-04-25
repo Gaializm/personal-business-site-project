@@ -1,5 +1,5 @@
-import { Link } from 'react-router-dom';
-import style from '../Styles/Projects.module.css';
+﻿import { Link } from 'react-router-dom';
+import style from '../Styles/ProjectCard.module.css';
 
 const ProjectCard = ({ id, photo, projectName, description }) => {
     return (
@@ -8,8 +8,9 @@ const ProjectCard = ({ id, photo, projectName, description }) => {
                 <img src={photo} alt={projectName} />
             </div>
             <div className={style["project-card_content"]}>
-                <h2>{projectName}</h2>
-                <p>{description}</p>
+                <h2 className={style["project-title"]}>{projectName}</h2>
+                <p className={style["project-description"]}>{description}</p>
+                <span className={style["see-more"]}>See more →</span>
             </div>
         </Link>
     );

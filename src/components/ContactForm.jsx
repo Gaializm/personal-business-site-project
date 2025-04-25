@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import style from "../styles/ContactForm.module.css";
 
 const ContactForm = () => {
@@ -7,9 +7,8 @@ const ContactForm = () => {
     const [submitting, setSubmitting] = useState(false);
     const [successMessage, setSuccessMessage] = useState("");
 
-    // Validate phone number format
     const validatePhoneNumber = (phone) => {
-        const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/; // Matches (123) 456-7890, 123-456-7890, or 1234567890
+        const phoneRegex = /^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/;
         return phoneRegex.test(phone);
     };
 
@@ -17,8 +16,7 @@ const ContactForm = () => {
         const { name, value } = e.target;
         setData({ ...data, [name]: value });
 
-        // Validate phone number on change
-        if (name === "phoneNumber") {
+        if (name === "phone") {
             if (value.trim() === "") {
                 setErrors((prevErrors) => ({ ...prevErrors, phone: "" }));
             } else if (!validatePhoneNumber(value)) {
@@ -32,9 +30,8 @@ const ContactForm = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        // Validate phone number before submission
         if (!validatePhoneNumber(data.phone)) {
-            setErrors((prevErrors) => ({ ...prevErrors, phoneNumber: "Invalid phone number format" }));
+            setErrors((prevErrors) => ({ ...prevErrors, phone: "Invalid phone number format" }));
             return;
         }
 
@@ -69,7 +66,6 @@ const ContactForm = () => {
         }
     };
 
-    // Check if the form is valid
     const isFormValid = () => {
         return (
             data.name.trim() !== "" &&
@@ -98,7 +94,9 @@ const ContactForm = () => {
                 value={data.phone}
                 onChange={handleChange}
             />
-            {errors.phoneNumber && <p className={style['error']}>{errors.phoneNumber}</p>}
+        
+            {errors.phone && <p className={style['error']}>{errors.phone}</p>}
+
             <input
                 type="email"
                 name="email"

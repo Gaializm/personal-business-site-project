@@ -5,23 +5,26 @@
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-    padding: 1.5rem;
-    background-color: #fff;
+    padding: 2rem;
+    background-color: var(--header-light-color);
     border-radius: 0.75rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    box-shadow: var(--box-shadow);
     box-sizing: border-box;
+    font-family: var(--font-family);
 }
 
     .contact-form input,
     .contact-form textarea {
         width: 100%;
         padding: 0.75rem 1rem;
-        border: 1px solid #ccc;
+        border: 1px solid var(--header-dark-color);
         border-radius: 0.5rem;
         font-size: 1rem;
-        font-family: inherit;
+        font-family: var(--font-family);
         resize: vertical;
         box-sizing: border-box;
+        background-color: #ffffff;
+        color: var(--light-text-color);
     }
 
     .contact-form textarea {
@@ -30,36 +33,38 @@
 
     .contact-form button {
         padding: 0.75rem 1.5rem;
-        background-color: #0f62fe;
-        color: white;
+        background-color: var(--button-light-mode-color);
+        color: var(--button-light-text-color);
         border: none;
         border-radius: 0.5rem;
         font-size: 1rem;
         font-weight: bold;
         cursor: pointer;
-        transition: background-color 0.2s ease;
+        transition: background-color 0.2s ease, color 0.2s ease;
     }
 
         .contact-form button:disabled {
-            background-color: #ccc;
+            background-color: var(--button-light-mode-color);
             cursor: not-allowed;
         }
 
         .contact-form button:hover:not(:disabled) {
-            background-color: #0043ce;
+            background-color: var(--button-hover-light-color);
+            color: var(--button-dark-text-color);
         }
 
     .contact-form p {
         margin: 0;
         font-size: 0.9rem;
+        color: var(--light-text-color);
     }
 
 .error {
-    color: #d32f2f;
+    color: var(--third-background-color);
     font-weight: 500;
 }
 
 .success {
-    color: #2e7d32;
+    color: var(--success-color);
     font-weight: 500;
 }
