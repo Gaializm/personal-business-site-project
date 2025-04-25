@@ -1,6 +1,7 @@
 body {
-  background-color: var(--primary-background-color);
-  color: var(--light-text-color);
+    font-family: var(--font-family);
+    background-color: var(--primary-background-color);
+    color: var(--light-text-color);
 }
 .infos {
   max-width: 1200px;

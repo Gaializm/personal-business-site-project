@@ -1,0 +1,34 @@
+.launcher {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.launcherButton {
+    background-color: var(--button-light-mode-color);
+    color: var(--button-light-text-color);
+    border: none;
+    border-radius: 50px;
+    padding: 0.75rem 1.5rem;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+    .launcherButton:hover {
+        background-color: var(--button-hover-light-color);
+        transform: scale(1.05);
+    }
+
+.chatbotWrapper {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    z-index: 999;
+    width: 320px;
+    max-height: 500px;
+}

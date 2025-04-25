@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef, memo } from 'react';
 import responses from '../data/responses.json';
-import style from '../styles/Chatbot.module.css';
+import style from '../styles/chatbot.module.css';
 
 const Chatbot = memo(() => {
     const [messages, setMessages] = useState([]);
@@ -55,7 +55,7 @@ const Chatbot = memo(() => {
 
     return (
         <div className={style["chat-container"]}>
-            <h2 className={style["chat-header"]}> Chat with LunaBot </h2>
+            <h2 className={style["chat-header"]}> Chat with CreateBot </h2>
             <div className={style["chat-box"]}>
                 {messages.map((msg, index) => (
                     <div

@@ -11,6 +11,7 @@ import Footer from "../components/Footer";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import PopupContextProvider from '../contexts/PopupContext';
 import Popup from '../components/Popup';
+import ChatbotLauncher from '../components/ChatbotLauncher';
 
 
 
@@ -54,6 +55,7 @@ const GaiaApp = () => {
                 </Routes>
                 </main>
             </ProjectProvider>
+            <ChatbotLauncher />
             <Footer />
         </>
            
