@@ -41,6 +41,38 @@
   .navLinks li a:hover {
     color: var(--link-color);
   }
+
+  .menuButton {
+    display: none;
+    font-size: 18px;
+    background: none;
+    border: none;
+    color: var(--header-light-text-color);
+    cursor: pointer;
+}
+
+/* Only show hamburger on small screens */
+@media (max-width: 768px) {
+    .menuButton {
+        display: block;
+        position: absolute;
+        /* top: 1rem; */
+        right: 0rem;
+    }
+
+    .navLinks {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 0.5rem;
+        margin-top: 1rem;
+    }
+
+    .showMenu {
+        display: flex;
+    }
+}
+
   
   /* 🔻 Media Query for Small Screens */
   @media (max-width: 768px) {
