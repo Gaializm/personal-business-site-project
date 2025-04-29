@@ -46,11 +46,31 @@
     font-family: var(--font-family);
     font-weight: 400;
     line-height: 1.6;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.5rem;
 }
 
 .open {
     padding: 1rem;
-    max-height: 1000px; /* allows content to fully expand */
+    max-height: 1000px; 
     border-bottom: 4px dotted var(--header-dark-color);
     transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+.accordion-content p {
+    flex: 1 1 300px;
+    font-size: 1rem;
+    margin: 0;
+}
+
+.accordion-content a, 
+.accordion-content img {
+    flex: 1 1 300px;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
 }

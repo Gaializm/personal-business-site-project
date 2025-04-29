@@ -1,5 +1,5 @@
 import FeaturedProjects from '../components/FeaturedProjects';
-import placeholder from '../assets/placeholderProjectImage.jpg';
+import placeholder from '../assets/placeholder.png';
 import Banner from '../components/Banner';
 import styles from '../styles/about.module.css';
 

@@ -1,8 +1,8 @@
 import React, { createContext, useContext } from 'react';
 import ServicePreview from '../components/servicePreview';
-import project1Image from '../assets/placeholderProjectImage.jpg';
-import project2Image from '../assets/placeholderProjectImage.jpg';
-import project3Image from '../assets/placeholderProjectImage.jpg';
+import project1Image from '../assets/project1.png';
+import project2Image from '../assets/project2.jpg';
+import project3Image from '../assets/project3.png';
 
 const projects = [
     {
