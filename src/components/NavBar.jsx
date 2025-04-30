@@ -12,7 +12,7 @@ const Navbar = ({ mode, setMode }) => {
 
     return (
         <nav className={styles.navbar}>
-            <div className={styles.logo}>
+            <div className={styles.logo} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
                 <Link to="/">ctrl + alt + create</Link>
             </div>
 
