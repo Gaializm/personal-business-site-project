@@ -1,4 +1,7 @@
-body {
+main {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     font-family: var(--font-family);
     background-color: var(--primary-background-color);
     color: var(--light-text-color);
@@ -41,7 +44,7 @@ body {
 .texts p {
   font-size: 1rem;
   line-height: 1.6;
-  color: #444;
+  color: var(--light-text-color);
 }
 
 /* Mobile Styles */

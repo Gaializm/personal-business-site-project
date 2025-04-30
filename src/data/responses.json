@@ -1,44 +1,92 @@
-﻿{
-	"greetings": {
-		"patterns": [ "hi", "hello", "hey", "good morning", "good afternoon", "good evening" ],
-		"responses": [
-			"Hey there! 😊",
-			"Hello! How can I help you today?",
-			"Hi! What’s on your mind?",
-			"Hey! 👋 Need anything?"
-		]
-	},
-	"farewells": {
-		"patterns": [ "bye", "goodbye", "see you", "good night", "later" ],
-		"responses": [
-			"Goodbye! Take care! 🌙",
-			"See you later! 👋",
-			"Hope to chat again soon!",
-			"Bye! Have a great day! ✨"
-		]
-	},
-	"thanks": {
-		"patterns": [ "thanks", "thank you", "thx", "appreciate it" ],
-		"responses": [
-			"You're very welcome! 🤗",
-			"No problem at all!",
-			"Anytime! Glad I could help!",
-			"Of course! 💜"
-		]
-	},
-	"help": {
-		"patterns": [ "help", "what can you do", "capabilities", "how do i use this" ],
-		"responses": [
-			"I can respond to basic messages like greetings, goodbyes, and thank-yous!",
-			"Try saying hello or asking for help — I’ll reply!",
-			"I’m a simple chatbot here to keep you company and answer simple stuff 💬"
-		]
-	},
-	"default": {
-		"responses": [
-			"Hmm... I don’t know how to respond to that yet 😅",
-			"I’m still learning! Maybe try something else?",
-			"I’m not sure what to say... Want to try a greeting or ask for help?"
-		]
+﻿
+	{
+		"greetings": {
+			"patterns": [ "hi", "hello", "hey", "good morning", "good afternoon", "good evening" ],
+			"responses": [
+				"Hi there! Welcome to ctrl + alt + create ✨",
+				"Hello! How can I help you explore our site today?",
+				"Hey! Looking for project samples, service info, or something else?",
+				"Welcome! Let me know if you want help navigating the site 💻"
+			]
+		},
+		"farewells": {
+			"patterns": [ "bye", "goodbye", "see you", "good night", "later" ],
+			"responses": [
+				"See you soon! Feel free to come back anytime 💫",
+				"Goodbye for now! Best of luck with your creative journey!",
+				"Catch you later! ctrl + alt + create will be here when you need us.",
+				"Take care! Hope to work together soon 🌟"
+			]
+		},
+		"thanks": {
+			"patterns": [ "thanks", "thank you", "thx", "appreciate it" ],
+			"responses": [
+				"You’re so welcome! 😊",
+				"Glad to help out!",
+				"No problem at all 💜",
+				"Happy to assist you!"
+			]
+		},
+		"services": {
+			"patterns": [ "what services do you offer", "your services", "do you design", "websites", "what can you make", "can you do illustrations", "services" ],
+			"responses": [
+				"We offer a wide range of services including graphic design, custom illustrations, website development, data visualization, UX design, and digital marketing 🎨💻",
+				"Need a logo, a custom dashboard, or a fully functional site? We’ve got you covered!",
+				"Yes! We do web design, UX, marketing, and creative visuals — feel free to explore our Services page.",
+				"We’d love to collaborate on anything from illustrations to interactive websites!"
+			]
+		},
+		"projects": {
+			"patterns": [ "can i see your work", "projects", "examples", "portfolio", "show me your work", "work samples", "work" ],
+			"responses": [
+				"Definitely! You can view examples of our work on the Work or Services pages 💡",
+				"Our portfolio features projects like educational dashboards, digital illustrations, UX wireframes, and more!",
+				"We’ve showcased recent work across our site — just head to 'Our Work' to browse!",
+				"Looking for inspiration? The Work page is a great place to start."
+			]
+		},
+		"contact": {
+			"patterns": [ "how can I contact you", "email", "reach out", "talk to you", "send a message", "contact" ],
+			"responses": [
+				"You can use the contact form on our Contact page or email us directly at contact@ctrlaltcreate.com 💌",
+				"The Contact page is your best bet! We’ll get back to you within a few business days.",
+				"Just head over to the Contact section — we’d love to hear about your project!"
+			]
+		},
+		"team": {
+			"patterns": [ "who made this", "who are you", "tell me about you", "who is ctrl + alt + create", "your team", "about" ],
+			"responses": [
+				"ctrl + alt + create was built by Belle and Gaia — two Purdue grads who love blending design and development!",
+				"We're a student duo passionate about functional, beautiful websites. Learn more about us on the About page!",
+				"The site was created by Belle and Gaia, both trained in Web Programming and Design 🖥️💡",
+				"Our team brings together design, UX, and code to create digital magic ✨"
+			]
+		},
+		"faq": {
+			"patterns": [ "how long does it take", "turnaround time", "do you do custom work", "can you customize", "where are the samples", "how fast" ],
+			"responses": [
+				"We do offer custom work! Let us know your needs on the Contact page.",
+				"Typical turnaround times depend on the project, but we respond to inquiries in 2–3 business days!",
+				"Yes, everything we do is tailored. Send us a message to chat details 💬",
+				"Samples can be found on the Work and Services pages!"
+			]
+		},
+		"help": {
+			"patterns": [ "help", "what can you do", "capabilities", "how do i use this", "chatbot" ],
+			"responses": [
+				"I'm CreateBot! I can answer questions about our team, services, project samples, and how to contact us 🐾",
+				"Ask me about ctrl + alt + create — projects, services, or where to find things!",
+				"I can guide you through what we offer and where to find info on the site ✨",
+				"Need help navigating? I’ve got you! Just ask.",
+				"Try typing 'projects', 'services', or 'contact' to get started!"
+			]
+		},
+		"default": {
+			"responses": [
+				"Hmm... I'm not sure how to respond to that yet 🐣 Try asking about our services or projects!",
+				"I’m still learning! Want to try asking something about ctrl + alt + create?",
+				"That one stumped me — but I’d love to help if you ask about our work, team, or offerings!",
+				"Not sure what that means, but I’m here if you need help exploring the site 🧭"
+			]
+		}
 	}
-}

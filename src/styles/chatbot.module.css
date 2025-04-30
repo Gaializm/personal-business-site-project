@@ -1,12 +1,25 @@
 .chat-container {
+    position: fixed;
+    bottom: 80px; 
+    right: 20px;
+    width: 350px;
+    max-height: 500px; 
+    display: flex;
+    flex-direction: column;
     background-color: var(--primary-background-color);
     border: 1px solid var(--header-dark-color);
     border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
     box-shadow: var(--box-shadow);
     overflow: hidden;
+    z-index: 1000;
+}
+
+.chat-box {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    background-color: var(--primary-background-color);
+    max-height: 300px; 
 }
 
 .chat-header {
@@ -17,13 +30,6 @@
     font-size: 1.25rem;
     font-weight: bold;
     padding: 1rem;
-}
-
-.chat-box {
-    flex-grow: 1;
-    padding: 1rem;
-    overflow-y: auto;
-    background-color: var(--primary-background-color);
 }
 
 .message {
@@ -53,8 +59,8 @@
 }
 
 .bot .text {
-    background-color: var(--button-hover-light-color);
-    color: var(--light-text-color);
+    background-color: var(--button-light-mode-color);
+    color: var(--header-dark-text-color);
 }
 
 .input-area {
@@ -75,8 +81,8 @@
 }
 
 .send-button {
-    background-color: var(--button-dark-mode-color);
-    color: var(--button-dark-text-color);
+    background-color: var(--button-light-mode-color);
+    color: var(--button-light-text-color);
     border: none;
     border-radius: 20px;
     padding: 0.75rem 1rem;
@@ -86,5 +92,6 @@
 }
 
     .send-button:hover {
-        background-color: var(--link-hover-color);
+        background-color: var(--button-dark-mode-color);
+        color: var(--header-dark-text-color);
     }

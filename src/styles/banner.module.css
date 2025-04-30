@@ -1,8 +1,9 @@
-:global(html, body) {
+html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-  }
+    background-color: var(--primary-background-color);
+}
   
   .banner {
     width: 100%;

@@ -1,7 +1,7 @@
 ﻿.project-card {
     display: flex;
     flex-direction: column;
-    background-color: #fff7fa;
+    background-color: var(--project-card-bg);
     border: 1px solid var(--light-text-color);
     border-radius: 12px;
     overflow: hidden;
@@ -64,5 +64,6 @@
 }
 
 .project-card:hover .see-more {
-    color: var(--link-color);
+    color: #42BCD4;
 }
+

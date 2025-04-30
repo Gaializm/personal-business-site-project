@@ -33,4 +33,25 @@ body {
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     --success-color: #2ecc71;
     --error-color: #e74c3c;
+    --project-card-bg: #fff7fa;
+    --toggle-color: #CDB4DB;
+    --toggle-hover: #B99BCA;
 }
+
+main.dark-mode {
+    --primary-background-color: #392A41;
+    --light-text-color: #FFEDF4;
+    --button-light-mode-color: #BDE0FE;
+    --button-light-text-color: #392A41;
+    --button-hover-light-color: #E0F1FF;
+    --header-light-color: #6B5577;
+    --header-light-text-color: #FFEDF4;
+    --link-color: #CDB4DB;
+    --link-hover-color: #FFAFCC;
+    --project-card-bg: #9482a1;
+    --toggle-color: #FFAFCC;
+    --toggle-hover: #FFEDF4;
+    --button-dark-mode-color: #CDB4DB;
+}
+
+       

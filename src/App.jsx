@@ -16,22 +16,24 @@ import ChatbotLauncher from './components/ChatbotLauncher';
 import './App.css';
 
 
+
 function App() {
     const [count, setCount] = useState(0)
+    const [mode, setMode] = useState("light");
 
     return (
         <HashRouter>
             <>
+                <main className={mode === "light" ? "light" : "dark-mode"}>
                 <PopupContextProvider>
                     <div>
                         <Popup />
                     </div>
                 </PopupContextProvider>
                 <header>
-                    <NavBar />
+                        <NavBar mode={mode} setMode={setMode} />
                 </header>
                 <ProjectProvider>
-                    <main>
                         <Routes>
 
 
@@ -56,10 +58,10 @@ function App() {
                             {/* 404 Not Found Page */}
                             <Route path="*" element={<NotFound />} />
                         </Routes>
-                    </main>
                 </ProjectProvider>
                 <ChatbotLauncher />
                 <Footer />
+                </main>
             </>
         </HashRouter>
     )

@@ -71,8 +71,35 @@
     .showMenu {
         display: flex;
     }
+
+
 }
 
+/* Mode Toggle Button */
+
+    .themeToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 40rem;
+    }
+
+    .themeToggle button {
+        padding: 0.3rem 0.75rem;
+        font-size: 1rem;
+
+        border-radius: 8px;
+        background-color: var(--toggle-color);
+        color: var(--header-dark-text-color);
+        font-family: var(--font-family);
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .themeToggle button:hover {
+        background-color: var(--toggle-hover);
+        color: var(--header-dark-text-color);
+    }
   
   /* 🔻 Media Query for Small Screens */
   @media (max-width: 768px) {

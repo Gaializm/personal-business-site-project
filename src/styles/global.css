@@ -1,61 +1,13 @@
 /* global.css */
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.pageContainer {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 8rem 1rem 6rem 1rem; /* top | right | bottom | left */
+    font-family: var(--font-family);
+    color: var(--light-text-color);
+    display: flex;
+    gap: 3rem;
 }
 
-html, body {
-  height: 100%;
-  font-family: var(--font-family);
-  background-color: #f9f9f9;
-  color: #333;
-  line-height: 1.6;
-  min-width: 100%;
-}
 
-a {
-  color: #0070f3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-ul, ol {
-  padding-left: 1.5rem;
-}
-
-button {
-  font-family: inherit;
-  font-size: 1rem;
-  cursor: pointer;
-  background-color: #0070f3;
-  color: white;
-  border: none;
-  padding: 0.5rem 1rem;
-  border-radius: 0.25rem;
-  transition: background-color 0.2s ease-in-out;
-}
-
-button:hover {
-  background-color: #005bb5;
-}
-
-input, textarea, select {
-  font-family: inherit;
-  font-size: 1rem;
-  padding: 0.5rem;
-  border: 1px solid #ccc;
-  border-radius: 0.25rem;
-  width: 100%;
-  max-width: 100%;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}

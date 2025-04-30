@@ -1,5 +1,6 @@
 import Accordion from "../components/Accordion";
 import ContactForm from "../components/ContactForm";
+import style from "../styles/pageStyle.module.css";
 
 const ServicesPage = () => {
 
@@ -10,22 +11,22 @@ const ServicesPage = () => {
         },
         {
             title: "Do you offer custom work?",
-            content: <p>Yes! We offer personalized design and development services. Reach out and tell us what you need — we’d love to hear about your project.</p>,
+            content: <p>Yes! We offer personalized design and development services. Reach out and tell us what you need we'd love to hear about your project.</p>,
         },
         {
             title: "What is your typical turnaround time?",
-            content: <p>Turnaround times vary depending on the project size, but we aim to respond to all inquiries within 2–3 business days.</p>,
+            content: <p>Turnaround times vary depending on the project size, but we aim to respond to all inquiries within 2-3 business days.</p>,
         },
         {
             title: "Can I see samples of your work?",
-            content: <p>Absolutely! Visit our Work Samples or Services page to explore examples of what we’ve created.</p>,
+            content: <p>Absolutely! Visit our Work Samples or Services page to explore examples of what we've created.</p>,
         },
     ];
 
     return (
 
         <>
-
+            <div className={style.pageContainer}>
 
                 <h1>Contact Us</h1>
 
@@ -33,7 +34,12 @@ const ServicesPage = () => {
 
                 <h1>FAQ</h1>
 
+            </div>
+            <div className={style.pageContainer}>
+
                 <Accordion items={faqItems} />
+
+            </div>
 
         </>
     );

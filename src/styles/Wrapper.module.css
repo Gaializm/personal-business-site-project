@@ -1,12 +1,16 @@
 
 .section {
     width: 100%;
+    background-color: var(--primary-background-color);
+    color: var(--light-text-color);
     padding: 2rem 1rem;
     box-sizing: border-box;
 }
 
 .container {
     max-width: 1000px;
+    background-color: var(--primary-background-color);
+    color: var(--light-text-color);
     margin: 0 auto;
     width: 100%;
     box-sizing: border-box;

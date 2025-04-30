@@ -3,7 +3,7 @@ import style from '../Styles/ProjectCard.module.css';
 
 const ProjectCard = ({ id, photo, projectName, description }) => {
     return (
-        <Link to={`/projects/${id}`} className={style["project-card"]}>
+        <Link to={`/projects/${id}`} className={style["project-card"]} onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
             <div className={style["project-card_image"]}>
                 <img src={photo} alt={projectName} />
             </div>
