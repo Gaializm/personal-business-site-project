@@ -87,7 +87,6 @@
     .themeToggle button {
         padding: 0.3rem 0.75rem;
         font-size: 1rem;
-
         border-radius: 8px;
         background-color: var(--toggle-color);
         color: var(--header-dark-text-color);
@@ -131,6 +130,12 @@
     .navLinks li a:hover {
       background-color: var(--header-light-color);
       color: var(--header-light-text-color);
+    }
+    .themeToggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0;
     }
   }
   
