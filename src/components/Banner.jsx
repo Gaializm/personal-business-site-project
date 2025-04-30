@@ -1,4 +1,4 @@
-import bannerImage from '../assets/placeholderBanner.png';
+import bannerImage from '../assets/Banner6.jpg';
 import style from '../styles/Banner.module.css';
 
 const Banner = () => {
