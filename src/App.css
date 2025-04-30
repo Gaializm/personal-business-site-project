@@ -9,6 +9,13 @@
 body, html {
     background-color: var(--primary-background-color); 
     margin: 0;
-    padding: 2rem 0 0 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+body, html {
+        padding: 2rem 0 0 0;
+        margin: 0;
+    }
 }
 
